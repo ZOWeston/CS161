@@ -1,0 +1,43 @@
+
+#my pet :)
+pet_type = "Dog"
+pet_name = "Pollyana"
+pronoun = "her"
+
+print(f"I have a {pet_type}, {pronoun} name is {pet_name}!")
+
+#start of yearly savings, name, and age calculator
+person_name = input("Enter your first name: ")
+person_age = input("Enter your current age: ")
+try:
+    person_age = int(person_age)
+except:
+    print("an exception has occurred")
+#I use try except for a lot of these so the program doesnt fully break down when someone enters a wrong answer
+
+person_savings = input("Enter your yearly savings: ")
+try:
+    person_savings = int(person_savings)
+except:
+    print("an exception has occurred")
+
+print(f"hello {person_name}! you are currently {person_age} years old, and in 10 years, you will be {person_age + 10} years old! If you save {person_savings} each year, in 5 years you will have saved {person_savings*5}, and your average monthly savings is {person_savings/12}")
+
+#start of seconds in january, this ones just math
+seconds_in_january = 60*60*24*31
+
+print(f"the number of seconds in the month of january is {seconds_in_january}")
+
+#start of eggs dozen calculator
+eggs_number = input("Enter the amount of eggs: ")
+
+try:
+    eggs_number = int(eggs_number)
+except:
+    print("an exception has occurred")  #turning eggs into an integer
+
+neweggs_number = eggs_number/12 #divide egg number by 12
+neweggs_number = int(neweggs_number) #make sure its not a float
+neweggs_remainder = eggs_number%12  #get the remainder of the original answer
+print(f"You have {neweggs_number} dozen eggs, with {neweggs_remainder} left over")
+#e double g s eggs
